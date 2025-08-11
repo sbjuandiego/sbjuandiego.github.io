@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solano Red</title>
+  <style>
+    :root {
+      --bg-dark: #121212;
+      --card-dark: #1E1E1E;
+      --text-light: #FCE4EC;
+      --accent-light: #FFCDD2;
+      --accent-hover: #FFEBEE;
+      --font-main: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
+
+    header {
+      background-color: var(--card-dark);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-title img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+
+    .logo-title h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: var(--accent-light);
+    }
+
+    nav a {
+      color: var(--accent-light);
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent-hover);
+    }
+
+    .hero {
+      padding: 3rem 2rem;
+      text-align: center;
+      background-color: var(--card-dark);
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--accent-light);
+    }
+
+    .hero p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--text-light);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background-color: var(--card-dark);
+      border: 1px solid var(--accent-light);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+      border-color: var(--accent-hover);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    .product-card h3 {
+      margin: 0.5rem 0;
+      color: var(--accent-light);
+    }
+
+    .product-card p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--accent-light);
+      margin-top: 0.5rem;
+    }
+
+    .whatsapp-btn {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent-light);
+      border: none;
+      border-radius: 4px;
+      color: var(--bg-dark);
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: var(--accent-hover);
+    }
+
+    footer {
+      background-color: var(--card-dark);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      color: var(--accent-light);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="logo.png" alt="Solano Red Logo">
+      <h1>Solano Red</h1>
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Estilo, acción y convivencia</h2>
+    <p>Bienvenido a Solano Red, donde la elegancia se une con la energía. Descubre productos que reflejan tu identidad y transforman tu entorno.</p>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150" alt="Producto 1">
+      <h3>Acción Minimal</h3>
+      <p>Diseño funcional con estética moderna.</p>
+      <div class="price">$19.99</div>
+      <a class="whatsapp-btn" href="https://wa.me/p/1234567890123456/573001234567" target="_blank">Ver en WhatsApp</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150" alt="Producto 2">
+      <h3>Convivencia Pro</h3>
+      <p>Ideal para espacios compartidos y creativos.</p>
+      <div class="price">$29.99</div>
+      <a class="whatsapp-btn" href="https://wa.me/p/2345678901234567/573001234567" target="_blank">Ver en WhatsApp</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150" alt="Producto 3">
+      <h3>Paz Urbana</h3>
+      <p>Estilo relajado con impacto visual.</p>
+      <div class="price">$39.99</div>
+      <a class="whatsapp-btn" href="https://wa.me/p/3456789012345678/573001234567" target="_blank">Ver en WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Solano Red. Inspirado en tu identidad. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
